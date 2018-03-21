@@ -1,14 +1,1 @@
--- Project: Attack of the Cuteness Game
--- http://MasteringCoronaSDK.com
--- Version: 1.0
--- Copyright 2013 J. A. Whye. All Rights Reserved.
--- "Space Cute" art by Daniel Cook (Lostgarden.com) 
-
--- housekeeping stuff
-
-display.setStatusBar(display.HiddenStatusBar)
-
-local centerX = display.contentCenterX
-local centerY = display.contentCenterY
-
--- set up forward references
+-- Project: Attack of the Cuteness Game-- http://MasteringCoronaSDK.com-- Version: 1.0-- Copyright 2013 J. A. Whye. All Rights Reserved.-- "Space Cute" art by Daniel Cook (Lostgarden.com) -- housekeeping stuffdisplay.setStatusBar(display.HiddenStatusBar)-- set centerX&Y as center coordinateslocal centerX = display.contentCenterXlocal centerY = display.contentCenterY-- set up forward referenceslocal background = display.newImage("background.png")background.y = 130local planet = display.newImage("planet.png")planet.x = centerXplanet.y = display.contentHeight + 60  -- y below screen-- preload audio-- create play screen	-- game functionslocal function spawnEnemy()endlocal function startGame()	transition.to(background,{time=2000,y=centerY,x=centerX})								transition.to(planet, { time=2000, y=centerY } )	--move planet							-- take 2 seconds to change y to 300endlocal function planetDamage()endlocal function hitPlanet(obj)	endlocal function shipSmash(event)	endstartGame()
